@@ -3,7 +3,7 @@
 FROM ubuntu:22.04
 
 
-LABEL authors = "Michael C Ryan - spacetime.engineer@gmail.com, "
+LABEL authors = "Michael C Ryan - spacetime.engineer@gmail.com, michael.c.ryan@noaa.gov"
 WORKDIR /app
 
 COPY . .
