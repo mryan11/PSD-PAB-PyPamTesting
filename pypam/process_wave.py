@@ -7,9 +7,8 @@ name = 'SoundTrap'
 serial_number = 5459
 soundtrap = pyhy.soundtrap.SoundTrap(name=name, model=model, serial_number=serial_number)
 
-acu_file = acoustic_file.AcuFile("5459_20220118_052541.wav", soundtrap, 1)
-acu_file.plot_power_spectrum()
+acu_file = acoustic_file.AcuFile('/home/mryan/Desktop/wave_files/5459_20220118_052541.wav', soundtrap, 1)
+acu_file.plot_spectrum_per_chunk()
 
 nfft = 8000  # Set to the same as sampling rate (or higher band limit, when downsampling) for 1s time resolution
-acu_file.hybrid_millidecade_bands(nfft=nfft, fft_overlap=0.5, binsize=None, bin_overlap=0, db=True,
-                                               method='density', band=None)
+acu_file.hybrid_millidecade_bands(nfft=nfft, fft_overlap=0.5, binsize=None, bin_overlap=0, db=True, method='density', band=None)
