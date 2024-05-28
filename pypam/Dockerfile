@@ -25,13 +25,15 @@ RUN pip install --no-cache-dir --upgrade pip && \
 
 
 
-CMD [ "python3", "app.py" ]
+CMD [ "python3", "process_wave.py" ]
 
 
-# Docker Run Command : docker run -it --rm -p 5006:5006 pypam-testing
+# Docker Run Command : sudo docker run -it /home/mryan/Desktop/wave_files:/input_files
 
 # Docker Build Command : docker build -t pypam-testing .
 
 # Docker Push Command : docker push pypam-testing
 
 # Docker Pull Command : docker pull pypam-testing
+
+
