@@ -1,22 +1,17 @@
 # PyPamTesting
- 
- A PyPam Testing Support Repository
+A PyPam Testing Repository
 
+# Purpose
+To process a deployment with pypam by operating on a hydrophone-generated-wavefile-directory.
 
+- To run this very simple testing instance with docker
 
-To run testing build just clone and run the python3 implementation.
+        $ sudo docker build -t pypam-testing .
 
-    $ git clone https://github.com/xaviermouy/SoundScope.git
+- To run this very simple testing instance with docker
 
+        $ sudo docker run -it <local_path_to_wave_files>:/wave_files pypam-testing
 
-Navigate to repo directory :
-
-    $ cd soundscope-master
-
-
-Run docker compose:
-
-    $ docker compuse up
 
 
 
